@@ -2,6 +2,8 @@
 .venv
 .env
 
+# cache files
+__pycache__/*
+
 # Random files
 .DS_Store
-.ipynb_checkpoints
