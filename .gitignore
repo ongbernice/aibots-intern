@@ -1,5 +1,5 @@
 # Python virtual environment and packages
-venv
+.venv
 .env
 
 # Random files
