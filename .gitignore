@@ -1,5 +1,6 @@
 # Python virtual environment and packages
 venv
+.env
 
 # Random files
 .DS_Store
