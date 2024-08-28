@@ -1,0 +1,6 @@
+# Python virtual environment and packages
+venv
+
+# Random files
+.DS_Store
+.ipynb_checkpoints
