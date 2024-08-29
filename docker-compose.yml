@@ -11,10 +11,24 @@ services:
       - .:/app
     environment:
       - DATABASE_URL=mongodb://mongodb:27017/mydatabase
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
     depends_on:
       - mongodb
+    networks:
+      - app-network
 
   mongodb:
     image: mongo:latest
     ports:
       - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db  # Persist MongoDB data
+    networks:
+      - app-network
+
+volumes:
+  mongodb_data:
+
+networks:
+  app-network:
+    driver: bridge
